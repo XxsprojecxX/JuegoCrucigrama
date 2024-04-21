@@ -1,18 +1,17 @@
-package application;
-	
+package co.edu.poli.crucigrama.view;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 
 
-public class Main extends Application {
+public class VistaImplementacion extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("crucigrama.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("cruci2.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setTitle("CRUCIGRAMA");
 			primaryStage.setScene(scene);
