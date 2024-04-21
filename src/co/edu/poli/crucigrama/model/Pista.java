@@ -5,6 +5,12 @@ public class Pista {
 	private int idPista;
 	private String[] DescripcionPista;
 	
+	public Pista(int idPista, String[] descripcionPista) {
+		super();
+		this.idPista = idPista;
+		DescripcionPista = descripcionPista;
+	}
+
 	public void imprimirPista(int idPista, String descripcion) {
 		
 	}

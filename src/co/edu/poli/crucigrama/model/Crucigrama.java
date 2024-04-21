@@ -8,7 +8,7 @@ public class Crucigrama {
 	private String[] palabras;
 	private String pistas;
 	ArrayList<Integer> palabrasMostrar = new ArrayList<Integer>();
-	Usuario usuario = new Usuario();
+	Usuario usuario = new Usuario(1, "Andres", 0);
 
 	public void obtenerPalabras() {
 		palabras = new String[] { "SOPA", "ARROZ", "PAPA", "YUCA", "MANZANA", "PERA", "PIÑA", "GUANABANA" };
