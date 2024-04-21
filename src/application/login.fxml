@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="155.0" prefWidth="700.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="209.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="87.0" fitWidth="93.0" layoutX="36.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/una-plantilla-de-cuadricula-vacia-para-un-crucigrama-de-4-palabras-para-resolver-crucigramas-ilustracion-vectorial-2pxe02y.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="93.0" layoutX="569.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/crossword-flat-icon-on-white-600nw-717379351%20(2).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="365.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="276.0" layoutY="106.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" text="Usuario" />
+            <Button layoutX="299.0" layoutY="148.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="90.0" style="-fx-background-color: #0598ff;" text="Jugar" />
+            <Text fill="#0598ff" layoutX="257.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa Tu Usuario" wrappingWidth="224.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
