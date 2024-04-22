@@ -1,6 +1,6 @@
 package co.edu.poli.crucigrama.view;
 
-import co.edu.poli.crucugrama.conexionBD.Conexion;
+import co.edu.poli.crucigrama.conexionBD.Conexion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
