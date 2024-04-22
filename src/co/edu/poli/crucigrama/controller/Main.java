@@ -1,6 +1,7 @@
 package co.edu.poli.crucigrama.controller;
 
 import co.edu.poli.crucigrama.view.VistaImplementacion;
+import conexionBD.Conexion;
 
 public class Main {
 
@@ -8,6 +9,8 @@ public class Main {
 		
 		VistaImplementacion vista = new VistaImplementacion();
 		vista.start(null);
+		
+		
 
 	}
 

@@ -1,5 +1,6 @@
 package co.edu.poli.crucigrama.view;
 
+import conexionBD.Conexion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -10,7 +11,12 @@ import javafx.scene.Scene;
 public class VistaImplementacion extends Application {
 	@Override
 	public void start(Stage primaryStage) {
+
+		Conexion conexion = new Conexion(); 
+		conexion.conectar(); 
+		
 		try {
+			
 			Parent root = FXMLLoader.load(getClass().getResource("cruci2.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setTitle("CRUCIGRAMA");
