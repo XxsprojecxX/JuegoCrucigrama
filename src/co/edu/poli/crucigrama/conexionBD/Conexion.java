@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class Conexion {
 
 	private static final String CONTROLADOR = "com.mysql.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://localhost:3306/bdcrucigrama?useSSL=false" ;
+	private static final String URL = "jdbc:mysql://localhost:3306/crucigrama?useSSL=false" ;
 	private static final String USUARIO = "root";
-	private static final String CLAVE = "Rosalba2131%";
+	private static final String CLAVE = "Admin123*";
 	
 	static {
 		try {
@@ -24,7 +24,7 @@ public class Conexion {
 		
 		try {
 			conexion= DriverManager.getConnection(URL,USUARIO, CLAVE);
-			System.out.println("Conexion OK");
+			System.out.println("Conexion exitosa!");
 			
 		}catch (SQLException e) {
 			System.out.println("Error en la conexion");
