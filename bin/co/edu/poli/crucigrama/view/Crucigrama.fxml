@@ -1,67 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <AnchorPane   prefHeight="83.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
-            <Circle fill="#ff6d1f" layoutX="559.0" layoutY="26.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Text fill="WHITE" layoutX="547.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
-            <Text fill="WHITE" layoutX="101.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
+            <Text fill="WHITE" layoutX="70.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
                <font>
-                  <Font size="28.0" />
+                  <Font size="37.0" />
                </font>
             </Text>
+            <Circle fill="#ff1fac" layoutX="742.0" layoutY="23.0" radius="19.0" stroke="#b92626" strokeType="INSIDE" />
+            <Text fill="WHITE" layoutX="723.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
          </children>
       </AnchorPane>
    </top>
-   <center>
-      <BorderPane prefHeight="317.0" prefWidth="318.0" BorderPane.alignment="CENTER">
-         <left>
-            <BorderPane prefHeight="317.0" prefWidth="289.0" BorderPane.alignment="CENTER">
-               <bottom>
-                  <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #0598FF;" text="FACIL" BorderPane.alignment="CENTER" />
-               </bottom>
-               <center>
-                  <ImageView fitHeight="151.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                     <image>
-                        <Image url="@../../../../Downloads/una-plantilla-de-cuadricula-vacia-para-un-crucigrama-de-4-palabras-para-resolver-crucigramas-ilustracion-vectorial-2pxe02y.jpg" />
-                     </image>
-                  </ImageView>
-               </center>
-            </BorderPane>
-         </left>
-         <right>
-            <BorderPane prefHeight="317.0" prefWidth="302.0" BorderPane.alignment="CENTER">
-               <center>
-                  <ImageView fitHeight="155.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-                     <image>
-                        <Image url="@../../../../Desktop/crossword-flat-icon-on-white-600nw-717379351%20(2).jpg" />
-                     </image>
-                  </ImageView>
-               </center>
-               <bottom>
-                  <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="99.0" style="-fx-background-color: #0598ff;" text="DIFICIL" BorderPane.alignment="CENTER" />
-               </bottom>
-            </BorderPane>
-         </right>
-         <top>
-            <Text fill="#0598ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Elije La Dificultad" wrappingWidth="176.853515625" BorderPane.alignment="CENTER">
+   <left>
+      <AnchorPane prefHeight="524.0" prefWidth="292.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="40.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horizontales">
                <font>
-                  <Font size="22.0" />
-               </font>
-            </Text>
-         </top>
-      </BorderPane>
+                  <Font size="21.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verticales" wrappingWidth="98.955078125">
+               <font>
+                  <Font size="21.0" />
+               </font></Text>
+            <Text fx:id="pista_1" fill="WHITE" layoutX="26.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Conjunto de pasos para ejecutar una tarea" />
+            <Text fx:id="pista_2" fill="WHITE" layoutX="27.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Almacena información en filas y columnas" />
+            <Text fx:id="písta_3" fill="WHITE" layoutX="26.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Se usa para la web" />
+            <Text fx:id="pista_4" fill="WHITE" layoutX="26.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. estructura que evalua mas de un caso" />
+            <Text fx:id="písta_5" fill="WHITE" layoutX="29.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.escribir codigo" />
+            <Text fx:id="písta_6" fill="WHITE" layoutX="29.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. falla en el codigo" />
+            <Text fx:id="pista_7" fill="WHITE" layoutX="29.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. solo tiene dos valores" />
+            <Text fx:id="pista_8" fill="WHITE" layoutX="29.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. se repite hasta que algo sea cierto" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="510.0" prefWidth="567.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="cruz_algoritmo_PG" layoutX="247.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_2" layoutX="272.0" layoutY="176.0" prefHeight="27.0" prefWidth="23.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_3" layoutX="294.0" layoutY="176.0" prefHeight="27.0" prefWidth="24.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_4" layoutX="317.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_5" layoutX="342.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algotirmo_6" layoutX="367.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_7" layoutX="392.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_8" layoutX="418.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_algoritmo_boolean" layoutX="443.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_1" layoutX="443.0" layoutY="149.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_2" layoutX="443.0" layoutY="203.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_boolean_HTML" layoutX="443.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_4" layoutX="443.0" layoutY="257.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_5" layoutX="443.0" layoutY="285.0" prefHeight="28.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_6" layoutX="443.0" layoutY="313.0" prefHeight="24.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="HTML_1" layoutX="367.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="HTML_2" layoutX="392.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="HTML_3" layoutX="418.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_1" layoutX="247.0" layoutY="41.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_2" layoutX="247.0" layoutY="68.0" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_3" layoutX="247.0" layoutY="96.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_PG_BD" layoutX="247.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_5" layoutX="247.0" layoutY="149.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_6" layoutX="247.0" layoutY="203.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_7" layoutX="247.0" layoutY="229.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_8" layoutX="247.0" layoutY="257.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_BD_BUG" layoutX="76.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_2" layoutX="101.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_3" layoutX="123.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_BD_BUCLE" layoutX="147.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_5" layoutX="172.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_6" layoutX="197.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_7" layoutX="222.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_8" layoutX="272.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_9" layoutX="297.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_10" layoutX="322.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUG_1" layoutX="76.0" layoutY="149.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUG_2" layoutX="76.0" layoutY="175.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUCLE_1" layoutX="148.0" layoutY="18.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <Text layoutX="256.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+            <Text layoutX="85.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+            <Text layoutX="351.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+            <Text layoutX="157.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+            <Text layoutX="38.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+            <Text layoutX="59.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+            <Text layoutX="453.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+            <Button layoutX="219.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: #0598ff;" text="Terminado" textFill="WHITE" />
+            <TextField fx:id="BUCLE_2" layoutX="148.0" layoutY="44.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_switch_BUCLE" layoutX="148.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUCLE_4" layoutX="148.0" layoutY="97.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_1" layoutX="50.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_2" layoutX="76.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_3" layoutX="101.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_4" layoutX="123.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_5" layoutX="172.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <Text layoutX="231.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+         </children>
+      </AnchorPane>
    </center>
 </BorderPane>
-

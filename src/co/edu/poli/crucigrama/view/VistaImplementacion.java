@@ -27,7 +27,7 @@ public class VistaImplementacion extends Application {
 		}
 
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("cruci2.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("crucigrama.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setTitle("CRUCIGRAMA");
 			primaryStage.setScene(scene);

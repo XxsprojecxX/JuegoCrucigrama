@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane   prefHeight="83.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#ff6d1f" layoutX="559.0" layoutY="26.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fill="WHITE" layoutX="547.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+            <Text fill="WHITE" layoutX="101.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="317.0" prefWidth="318.0" BorderPane.alignment="CENTER">
+         <left>
+            <BorderPane prefHeight="317.0" prefWidth="289.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #0598FF;" text="FACIL" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <ImageView fitHeight="151.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../../../Downloads/una-plantilla-de-cuadricula-vacia-para-un-crucigrama-de-4-palabras-para-resolver-crucigramas-ilustracion-vectorial-2pxe02y.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </left>
+         <right>
+            <BorderPane prefHeight="317.0" prefWidth="302.0" BorderPane.alignment="CENTER">
+               <center>
+                  <ImageView fitHeight="155.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../../../Desktop/crossword-flat-icon-on-white-600nw-717379351%20(2).jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="99.0" style="-fx-background-color: #0598ff;" text="DIFICIL" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </right>
+         <top>
+            <Text fill="#0598ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Elije La Dificultad" wrappingWidth="176.853515625" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
+
