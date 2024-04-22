@@ -1,7 +1,6 @@
 package co.edu.poli.crucigrama.controller;
 
 import co.edu.poli.crucigrama.view.VistaImplementacion;
-import conexionBD.Conexion;
 
 public class Main {
 

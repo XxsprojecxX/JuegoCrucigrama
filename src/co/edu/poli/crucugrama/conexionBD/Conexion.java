@@ -1,4 +1,4 @@
-package conexionBD;
+package co.edu.poli.crucugrama.conexionBD;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
