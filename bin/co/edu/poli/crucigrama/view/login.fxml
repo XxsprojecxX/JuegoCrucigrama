@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.crucigrama.controller.ControladorVistaPrincipal">
    <top>
       <AnchorPane prefHeight="155.0" prefWidth="700.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
@@ -35,7 +35,7 @@
       <AnchorPane prefHeight="365.0" prefWidth="700.0" BorderPane.alignment="CENTER">
          <children>
             <TextField layoutX="276.0" layoutY="106.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" text="Usuario" />
-            <Button layoutX="299.0" layoutY="148.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="90.0" style="-fx-background-color: #0598ff;" text="Jugar" />
+            <Button layoutX="299.0" layoutY="148.0" mnemonicParsing="false" onAction="#ShowCrucigrama" prefHeight="49.0" prefWidth="90.0" style="-fx-background-color: #0598ff;" text="Jugar" />
             <Text fill="#0598ff" layoutX="257.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa Tu Usuario" wrappingWidth="224.13671875">
                <font>
                   <Font size="21.0" />

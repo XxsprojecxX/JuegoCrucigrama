@@ -103,24 +103,21 @@ public class Crucigrama {
 
 	}
 
-	public void validarPalabra(int idPalabra) {
+	public void validarPalabra(String palabraIngresada) {
 		String palabra = null;
 		for (int i = 0; i < palabras.size(); i++) {
-			if (idPalabra - 1 == i) {
-				System.out.println("Ingrese la palabra: ");
+			palabra = palabraIngresada;
+			while (palabra == null | palabra.isEmpty() | !palabra.matches("[a-zA-Z]+")) {
+				System.err.println("No se pueden ingresar espacios, carácteres especiales ni números.");
+				System.out.println("Ingrese nuevamente la palabra: ");
 				palabra = teclado.next();
-				while (palabra == null | palabra.isEmpty() | !palabra.matches("[a-zA-Z]+")) {
-					System.err.println("No se pueden ingresar espacios, carácteres especiales ni números.");
-					System.out.println("Ingrese nuevamente la palabra: ");
-					palabra = teclado.next();
-				}
-				if (palabra.equalsIgnoreCase(palabras.get(i))) {
-					System.out.println("Correcto!");
-					mostrarPalabras(i);
-					sumarPuntaje();
-				} else {
-					System.err.println("Palabra Incorrecta!");
-				}
+			}
+			if (palabra.equalsIgnoreCase(palabras.get(i))) {
+				System.out.println("Correcto!");
+				mostrarPalabras(i);
+				sumarPuntaje();
+			} else {
+				System.err.println("Palabra Incorrecta!");
 			}
 		}
 	}
