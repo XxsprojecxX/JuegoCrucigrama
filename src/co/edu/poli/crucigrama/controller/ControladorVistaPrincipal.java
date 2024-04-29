@@ -1,6 +1,9 @@
 package co.edu.poli.crucigrama.controller;
 
 import java.io.IOException;
+
+import co.edu.poli.crucigrama.model.Crucigrama;
+import co.edu.poli.crucigrama.model.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +15,7 @@ import javafx.scene.control.TextField;
 public class ControladorVistaPrincipal {
 
 	private Stage stage;
+
 	@FXML
 	private TextField txtCruzAlgoritmoPG;
 
@@ -26,8 +30,9 @@ public class ControladorVistaPrincipal {
 		controller.init(stage, this);
 		stage.show();
 		this.stage.close();
+
 	}
-	
+
 	public void setStage(Stage primaryStage) {
 		stage = primaryStage;
 	}

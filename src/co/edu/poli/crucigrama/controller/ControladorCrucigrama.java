@@ -1,5 +1,8 @@
 package co.edu.poli.crucigrama.controller;
 
+import java.util.ArrayList;
+
+import co.edu.poli.crucigrama.conexionBD.CRUD;
 import co.edu.poli.crucigrama.model.Crucigrama;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,7 +14,16 @@ public class ControladorCrucigrama {
 
 	private ControladorVistaPrincipal controladorVistaPrincipal;
 	private Stage stage;
+	private Crucigrama crucigrama = new Crucigrama();
+	private CRUD listaPalabrasbd = new CRUD();
 	private String algoritmo;
+	private String bd;
+	private String html;
+	private String swtch;
+	private String programar;
+	private String bug;
+	private String booleano;
+	private String bucle;
 
 	@FXML
 	private TextField BD_10;
@@ -180,17 +192,48 @@ public class ControladorCrucigrama {
 
 	@FXML
 	public void ValidarCrucigrama(ActionEvent event) {
-		Crucigrama crucigrama = new Crucigrama();
-		crucigrama.obtenerPalabras();
-		crucigrama.validarPalabra(validarPalabras());
+		crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra"));
 	}
 
-	public String validarPalabras() {
+	public ArrayList<String> obtenerListaPalabrasFront() {
+		ArrayList<String> listaPalabrasFront = new ArrayList<String>();
 		algoritmo = cruz_algoritmo_PG.getText() + algoritmo_2.getText() + algoritmo_3.getText() + algoritmo_4.getText()
 				+ algoritmo_5.getText() + algotirmo_6.getText() + algoritmo_7.getText() + algoritmo_8.getText()
 				+ cruz_algoritmo_boolean.getText();
-		System.out.println(algoritmo);
-		return algoritmo;
+
+		bd = cruz_BD_BUG.getText() + BD_2.getText() + BD_3.getText() + cruz_BD_BUCLE.getText() + BD_5.getText()
+				+ BD_6.getText() + BD_7.getText() + cruz_PG_BD.getText() + BD_8.getText() + BD_9.getText()
+				+ BD_10.getText();
+
+		html = HTML_1.getText() + HTML_2.getText() + HTML_3.getText() + cruz_boolean_HTML.getText();
+
+		swtch = switch_1.getText() + switch_2.getText() + switch_3.getText() + switch_4.getText()
+				+ cruz_switch_BUCLE.getText() + switch_5.getText();
+
+		programar = PG_1.getText() + PG_2.getText() + PG_3.getText() + cruz_PG_BD.getText() + PG_5.getText()
+				+ cruz_algoritmo_PG.getText() + PG_6.getText() + PG_7.getText() + PG_8.getText();
+
+		bug = cruz_BD_BUG.getText() + BUG_1.getText() + BUG_2.getText();
+		booleano = boolean_1.getText() + cruz_algoritmo_boolean.getText() + boolean_2.getText()
+				+ cruz_boolean_HTML.getText() + boolean_4.getText() + boolean_5.getText() + boolean_6.getText();
+		bucle = BUCLE_1.getText() + BUCLE_2.getText() + cruz_switch_BUCLE.getText() + BUCLE_4.getText()
+				+ cruz_BD_BUCLE.getText();
+
+		listaPalabrasFront.add(algoritmo);
+		listaPalabrasFront.add(bd);
+		listaPalabrasFront.add(html);
+		listaPalabrasFront.add(swtch);
+		listaPalabrasFront.add(programar);
+		listaPalabrasFront.add(bug);
+		listaPalabrasFront.add(booleano);
+		listaPalabrasFront.add(bucle);
+
+		return listaPalabrasFront;
+	}
+
+	public String mostrarMensaje(String mensaje) {
+
+		return mensaje;
 	}
 
 	public void init(Stage stage2, ControladorVistaPrincipal controladorVistaPrincipal) {
