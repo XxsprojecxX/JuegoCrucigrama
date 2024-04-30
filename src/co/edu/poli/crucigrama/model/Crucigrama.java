@@ -30,22 +30,23 @@ public class Crucigrama {
 		System.out.println(pistas);
 	}
 
-	public void validarPalabras(ArrayList<String> listaFront, ArrayList<String> listaBaseDatos) {
+	public String validarPalabras(ArrayList<String> listaFront, ArrayList<String> listaBaseDatos) {
 		String palabra;
+		String mensaje = "";
 		for (int i = 0; i < listaFront.size(); i++) {
 			palabra = listaFront.get(i);
 			if (palabra == null | palabra.isEmpty() | !palabra.matches("[a-zA-Z]+")) {
-				System.out.println(
-						"No se pueden ingresar espacios en blanco, carácteres especiales ni números. ID: " + (i + 1));
+				mensaje += "No se pueden ingresar espacios en blanco, carácteres especiales ni números. ID: " + (i + 1) + "\n\n";
 			} else if (palabra.equalsIgnoreCase(listaBaseDatos.get(i))) {
-				System.out.println("La palabra ingresada para el ID: " + (i + 1) + " ¡Es Correcta!");
+				mensaje += "La palabra ingresada para el ID: " + (i + 1) + " ¡Es Correcta!\n\n";
 				sumarPuntaje();
 			} else {
-				System.out.println("¡Palabra Incorrecta! ID: " + (i + 1));
+				mensaje += "¡Palabra Incorrecta! ID: " + (i + 1) + "\n\n\n";
 			}
 		}
-		System.out.println("Su Score es: " + usuario.getPuntaje());
+		mensaje += "\nSu Score es: " + usuario.getPuntaje() + "\n";
 		usuario.setPuntaje(0);
+		return mensaje;
 	}
 
 	public void sumarPuntaje() {

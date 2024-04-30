@@ -18,7 +18,7 @@
                </font>
             </Text>
             <Circle fill="#ff1fac" layoutX="742.0" layoutY="23.0" radius="19.0" stroke="#b92626" strokeType="INSIDE" />
-            <Text fill="WHITE" layoutX="723.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+            <Text fill="WHITE" layoutX="730.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
          </children>
       </AnchorPane>
    </top>

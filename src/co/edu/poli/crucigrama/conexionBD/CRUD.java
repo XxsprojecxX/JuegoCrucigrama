@@ -30,7 +30,7 @@ public class CRUD {
 				}
 				break;
 			}
-			case "pista": {
+			case "pistas": {
 				rs = stm.executeQuery("SELECT * FROM pista");
 				while (rs.next()) {
 					descripcionSql = rs.getString(2);

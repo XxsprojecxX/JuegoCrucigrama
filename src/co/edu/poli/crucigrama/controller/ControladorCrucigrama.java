@@ -1,11 +1,15 @@
 package co.edu.poli.crucigrama.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import co.edu.poli.crucigrama.conexionBD.CRUD;
 import co.edu.poli.crucigrama.model.Crucigrama;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -191,8 +195,15 @@ public class ControladorCrucigrama {
 	private TextField switch_5;
 
 	@FXML
-	public void ValidarCrucigrama(ActionEvent event) {
-		crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra"));
+	public void ValidarCrucigrama(ActionEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Resultados.fxml"));
+		Parent root = loader.load();
+		ControladorResultado controladorResultado = loader.getController();
+		Scene scene = new Scene(root);
+		Stage stage = new Stage();
+		stage.setScene(scene);
+		controladorResultado.init(crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra")));
+		stage.show();
 	}
 
 	public ArrayList<String> obtenerListaPalabrasFront() {
@@ -229,11 +240,6 @@ public class ControladorCrucigrama {
 		listaPalabrasFront.add(bucle);
 
 		return listaPalabrasFront;
-	}
-
-	public String mostrarMensaje(String mensaje) {
-
-		return mensaje;
 	}
 
 	public void init(Stage stage2, ControladorVistaPrincipal controladorVistaPrincipal) {

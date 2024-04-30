@@ -30,6 +30,8 @@ public class ControladorVistaPrincipal {
 		controller.init(stage, this);
 		stage.show();
 		this.stage.close();
+		Usuario nuevoUsuario = new Usuario(4, "Andre", 0);
+		nuevoUsuario.obtenerUsuario(3);
 
 	}
 
