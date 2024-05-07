@@ -31,7 +31,7 @@ public class ControladorVistaPrincipal {
 		stage.show();
 		this.stage.close();
 		Usuario nuevoUsuario = new Usuario(4, "Andre", 0);
-		nuevoUsuario.obtenerUsuario(3);
+		//nuevoUsuario.obtenerUsuario(3);
 
 	}
 
