@@ -47,7 +47,7 @@
    <center>
       <AnchorPane prefHeight="510.0" prefWidth="567.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="cruz_algoritmo_PG" layoutX="247.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_algoritmo_PG" layoutX="247.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" promptText="Text only" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="algoritmo_2" layoutX="272.0" layoutY="176.0" prefHeight="27.0" prefWidth="23.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="algoritmo_3" layoutX="294.0" layoutY="176.0" prefHeight="27.0" prefWidth="24.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="algoritmo_4" layoutX="317.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
@@ -65,7 +65,7 @@
             <TextField fx:id="HTML_1" layoutX="367.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="HTML_2" layoutX="392.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="HTML_3" layoutX="418.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_1" layoutX="247.0" layoutY="41.0" onKeyTyped="checkinput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_1" layoutX="247.0" layoutY="41.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="PG_2" layoutX="247.0" layoutY="68.0" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="PG_3" layoutX="247.0" layoutY="96.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="cruz_PG_BD" layoutX="247.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />

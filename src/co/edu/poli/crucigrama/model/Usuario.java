@@ -3,7 +3,11 @@ package co.edu.poli.crucigrama.model;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 import com.mysql.jdbc.Statement;
+
+import co.edu.poli.crucigrama.conexionBD.CRUD;
 import co.edu.poli.crucigrama.conexionBD.Conexion;
 
 public class Usuario {
@@ -11,6 +15,8 @@ public class Usuario {
 	private int idUsuario;
 	private String nombre;
 	private double puntaje;
+	private ArrayList<String> usuarios = new ArrayList<String>();
+	private CRUD bd = new CRUD();
 
 	public Usuario(int idUsuario, String nombre, double puntaje) {
 		super();
@@ -18,30 +24,11 @@ public class Usuario {
 		this.nombre = nombre;
 		this.puntaje = puntaje;
 	}
-	
-	public void obtenerUsuario(int id){
-		Conexion conexion = new Conexion();
-		Connection cn = null;
-		Statement stm = null;
-		ResultSet rs = null;
-		try {
-			cn = conexion.conectar();
-			stm = (Statement) cn.createStatement();
-			rs = stm.executeQuery("SELECT * FROM usuario WHERE idUsuario = " + id);
 
-			while (rs.next()) {
-				int idUsuarioSql = rs.getInt(1);
-				String usuarioSql = rs.getString(2);
-				double puntajeSql = rs.getDouble(3);
-				idUsuario = idUsuarioSql;
-				nombre = usuarioSql;
-				puntaje = puntajeSql;
-				System.out.println(idUsuarioSql + "-" + usuarioSql + "-" + puntajeSql);
-			}
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+	public ArrayList<String> obtenerUsuario(int id) {
+		usuarios = bd.leerDatosBD("usuario");
+		System.out.println(usuarios);
+		return usuarios;
 	}
 
 	public int getIdUsuario() {

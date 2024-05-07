@@ -1,8 +1,8 @@
 package co.edu.poli.crucigrama.controller;
 
+import javafx.event.Event;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import co.edu.poli.crucigrama.conexionBD.CRUD;
 import co.edu.poli.crucigrama.model.Crucigrama;
 import javafx.event.ActionEvent;
@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -202,8 +203,16 @@ public class ControladorCrucigrama {
 		Scene scene = new Scene(root);
 		Stage stage = new Stage();
 		stage.setScene(scene);
-		controladorResultado.init(crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra")));
+		controladorResultado
+				.init(crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra")));
 		stage.show();
+	}
+
+	@FXML
+	private void checkInput(KeyEvent event) {
+		if (cruz_algoritmo_PG.getText().length() <= 1) {
+			event.consume();
+		}
 	}
 
 	public ArrayList<String> obtenerListaPalabrasFront() {
