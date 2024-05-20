@@ -13,6 +13,7 @@ import java.sql.SQLException;
 /**
  * documentacion
  */
+
 public class Crucigrama {
 	private ArrayList<String> palabras = new ArrayList<String>();
 	private ArrayList<String> pistas = new ArrayList<String>();

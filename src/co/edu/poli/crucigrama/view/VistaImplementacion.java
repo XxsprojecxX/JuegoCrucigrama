@@ -13,7 +13,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public class VistaImplementacion extends Application {
-	@Override
 	public void start(Stage primaryStage) throws IOException {
 
 		try {
