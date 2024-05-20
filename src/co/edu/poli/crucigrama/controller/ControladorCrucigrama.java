@@ -234,8 +234,10 @@ public class ControladorCrucigrama {
 				+ cruz_algoritmo_PG.getText() + PG_6.getText() + PG_7.getText() + PG_8.getText();
 
 		bug = cruz_BD_BUG.getText() + BUG_1.getText() + BUG_2.getText();
+
 		booleano = boolean_1.getText() + cruz_algoritmo_boolean.getText() + boolean_2.getText()
 				+ cruz_boolean_HTML.getText() + boolean_4.getText() + boolean_5.getText() + boolean_6.getText();
+
 		bucle = BUCLE_1.getText() + BUCLE_2.getText() + cruz_switch_BUCLE.getText() + BUCLE_4.getText()
 				+ cruz_BD_BUCLE.getText();
 
