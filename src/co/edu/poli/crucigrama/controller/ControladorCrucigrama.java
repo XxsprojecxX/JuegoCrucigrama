@@ -16,6 +16,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+/**
+ * Controlador para la vista del crucigrama.
+ */
+
 public class ControladorCrucigrama {
 
 	private ControladorVistaPrincipal controladorVistaPrincipal;
@@ -177,6 +181,8 @@ public class ControladorCrucigrama {
 
 	@FXML
 	private Text txt_usuario;
+	
+	// Método para manejar el evento del botón de instrucciones
 
 	@FXML
 	private Button Instrucciones;
@@ -190,6 +196,8 @@ public class ControladorCrucigrama {
 		stage.setScene(scene);
 		stage.show();
 	}
+    // Método para validar el crucigrama y mostrar resultados
+
 
 	@FXML
 	public void ValidarCrucigrama(ActionEvent event) throws IOException {
@@ -203,7 +211,7 @@ public class ControladorCrucigrama {
 				.init(crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra")));
 		stage.show();
 	}
-
+	// Método para restringir la entrada de texto en un campo de texto
 	@FXML
 	private void checkInput(KeyEvent event) {
 		if (cruz_algoritmo_PG.getText().length() <= 1) {
@@ -214,7 +222,7 @@ public class ControladorCrucigrama {
 	public void mostrarPistas(String pistasBD) {
 		pistas.setText(pistasBD);
 	}
-
+	// Método para obtener las palabras ingresadas por el usuario desde la interfaz de usuario
 	public ArrayList<String> obtenerListaPalabrasFront() {
 		ArrayList<String> listaPalabrasFront = new ArrayList<String>();
 		algoritmo = cruz_algoritmo_PG.getText() + algoritmo_2.getText() + algoritmo_3.getText() + algoritmo_4.getText()
@@ -252,11 +260,11 @@ public class ControladorCrucigrama {
 
 		return listaPalabrasFront;
 	}
-
+	// Método para actualizar el texto del campo de usuario en la interfaz de usuario
 	public void actualizarUsuario(String usuario) {
 		txt_usuario.setText(usuario);
 	}
-
+	// Método para inicializar el controlador con la instancia de la ventana principal y el controlador asociado
 	public void init(Stage stage2, ControladorVistaPrincipal controladorVistaPrincipal) {
 		this.controladorVistaPrincipal = controladorVistaPrincipal;
 		this.stage = stage2;

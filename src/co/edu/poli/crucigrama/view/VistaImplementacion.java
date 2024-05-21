@@ -1,37 +1,47 @@
 package co.edu.poli.crucigrama.view;
 
 import java.io.IOException;
-import java.util.Scanner;
 import co.edu.poli.crucigrama.controller.ControladorVistaPrincipal;
-import co.edu.poli.crucigrama.model.Crucigrama;
-import co.edu.poli.crucigrama.model.Usuario;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+/**
+ * Clase que implementa la vista principal del crucigrama.
+ */
 public class VistaImplementacion extends Application {
-	public void start(Stage primaryStage) throws IOException {
 
-		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("VistaPrincipal.fxml"));
-			Parent root = loader.load();
-			Scene scene = new Scene(root);
-			primaryStage.setTitle("CRUCIGRAMA");
-			primaryStage.setScene(scene);
-			ControladorVistaPrincipal controladorVistaPrincipal = loader.getController();
-			controladorVistaPrincipal.setStage(primaryStage);
-			primaryStage.show();
+    /**
+     * Método principal para iniciar la aplicación.
+     * 
+     * @param primaryStage el escenario principal de la aplicación
+     * @throws IOException si ocurre un error de entrada/salida
+     */
+    public void start(Stage primaryStage) throws IOException {
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("VistaPrincipal.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            primaryStage.setTitle("CRUCIGRAMA");
+            primaryStage.setScene(scene);
+            ControladorVistaPrincipal controladorVistaPrincipal = loader.getController();
+            controladorVistaPrincipal.setStage(primaryStage);
+            primaryStage.show();
 
-		}
-	}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-	public static void main(String[] args) {
-		launch(args);
-	}
+    /**
+     * Método principal de la aplicación.
+     * 
+     * @param args argumentos de la línea de comandos
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
 }

@@ -1,18 +1,22 @@
 package co.edu.poli.crucigrama.controller;
 
-	import javafx.fxml.FXML;
-	import javafx.scene.text.Text;
+import javafx.fxml.FXML;
+import javafx.scene.text.Text;
 
-	public class ControladorResultado {
+/**
+ * Controlador para la vista de resultados del crucigrama.
+ */
+public class ControladorResultado {
 
-	    @FXML
-	    private Text Resultados;
+    @FXML
+    private Text Resultados;
 
-		public void init(String validarPalabras) {
-			Resultados.setText(validarPalabras);
-		}
-
-	}
-
-
-
+    /**
+     * Inicializa la vista de resultados con el texto proporcionado.
+     * 
+     * @param validarPalabras el texto a mostrar en la vista de resultados
+     */
+    public void init(String validarPalabras) {
+        Resultados.setText(validarPalabras);
+    }
+}
