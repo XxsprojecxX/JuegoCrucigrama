@@ -1,14 +1,9 @@
 package co.edu.poli.crucigrama.model;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
 import java.util.ArrayList;
-
-import com.mysql.jdbc.Statement;
-
 import co.edu.poli.crucigrama.conexionBD.CRUD;
-import co.edu.poli.crucigrama.conexionBD.Conexion;
+
 
 public class Usuario {
 
