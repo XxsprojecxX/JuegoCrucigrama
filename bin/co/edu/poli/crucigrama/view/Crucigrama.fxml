@@ -18,7 +18,7 @@
                </font>
             </Text>
             <Circle fill="#ff2197" layoutX="742.0" layoutY="33.0" radius="19.0" stroke="#b92626" strokeType="INSIDE" />
-            <Text fill="WHITE" layoutX="730.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+            <Text fx:id="txt_usuario" fill="WHITE" layoutX="722.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
             <Button fx:id="Instrucciones" layoutX="463.0" layoutY="25.0" mnemonicParsing="false" onAction="#BotonInstrucciones" style="-fx-background-color: white;" text="Instrucciones" />
          </children>
       </AnchorPane>

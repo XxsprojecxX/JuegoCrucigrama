@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.mysql.jdbc.PreparedStatement;
 import com.mysql.jdbc.Statement;
 
 public class CRUD {
@@ -73,9 +74,18 @@ public class CRUD {
 			while (rs.next()) {
 				idBD = rs.getString(1);
 			}
-
-			rs = stm.executeQuery("INSERT INTO `crucigrama`.`usuario` (`" + Integer.valueOf(idBD+1) + "`, `" + usuario
-					+ "`, `puntaje`) VALUES ('4', 'prueba', '0');");
+			
+			PreparedStatement ps;
+	        String insertSql;
+	        cn = conexion.conectar();
+	        
+	        insertSql = "INSERT INTO crucigrama.usuario(idUsuario, nombre, puntaje) values(?,?,?)";
+            ps = 	(PreparedStatement) cn.prepareStatement(insertSql);
+            ps.setInt(1, Integer.valueOf(idBD)+1);
+            ps.setString(2, usuario);
+            ps.setInt(3, 0);
+            ps.executeUpdate();
+            
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

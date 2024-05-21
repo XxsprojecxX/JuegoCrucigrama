@@ -1,9 +1,8 @@
 package co.edu.poli.crucigrama.controller;
 
 import java.io.IOException;
-
+import co.edu.poli.crucigrama.conexionBD.CRUD;
 import co.edu.poli.crucigrama.model.Crucigrama;
-import co.edu.poli.crucigrama.model.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,11 +16,12 @@ public class ControladorVistaPrincipal {
 	private Stage stage;
 
 	@FXML
-	private TextField txtCruzAlgoritmoPG;
+    private TextField txtUsuario;
 
 	@FXML
 	void ShowCrucigrama(ActionEvent event) throws IOException {
 		Crucigrama crucigrama = new Crucigrama();
+		CRUD crud = new CRUD();
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Crucigrama.fxml"));
 		Parent root = loader.load();
 		ControladorCrucigrama controller = loader.getController();
@@ -30,6 +30,8 @@ public class ControladorVistaPrincipal {
 		stage.setScene(scene);
 		controller.init(stage, this);
 		controller.mostrarPistas(crucigrama.obtenerPistas());
+		crud.insertarNuevoUsuario(txtUsuario.getText());
+		controller.actualizarUsuario(txtUsuario.getText());
 		stage.show();
 		this.stage.close();
 	}

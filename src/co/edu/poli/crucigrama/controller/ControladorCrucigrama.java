@@ -176,17 +176,20 @@ public class ControladorCrucigrama {
 	private TextField switch_5;
 
 	@FXML
-	private Button Instrucciones;
-	
+	private Text txt_usuario;
+
 	@FXML
-    void BotonInstrucciones(ActionEvent event) throws IOException {
+	private Button Instrucciones;
+
+	@FXML
+	void BotonInstrucciones(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Instrucciones.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
 		Stage stage = new Stage();
 		stage.setScene(scene);
 		stage.show();
-    }
+	}
 
 	@FXML
 	public void ValidarCrucigrama(ActionEvent event) throws IOException {
@@ -207,7 +210,7 @@ public class ControladorCrucigrama {
 			event.consume();
 		}
 	}
-	
+
 	public void mostrarPistas(String pistasBD) {
 		pistas.setText(pistasBD);
 	}
@@ -248,6 +251,10 @@ public class ControladorCrucigrama {
 		listaPalabrasFront.add(bucle);
 
 		return listaPalabrasFront;
+	}
+
+	public void actualizarUsuario(String usuario) {
+		txt_usuario.setText(usuario);
 	}
 
 	public void init(Stage stage2, ControladorVistaPrincipal controladorVistaPrincipal) {
