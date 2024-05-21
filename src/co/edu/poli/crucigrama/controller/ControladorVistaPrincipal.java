@@ -21,6 +21,7 @@ public class ControladorVistaPrincipal {
 
 	@FXML
 	void ShowCrucigrama(ActionEvent event) throws IOException {
+		Crucigrama crucigrama = new Crucigrama();
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Crucigrama.fxml"));
 		Parent root = loader.load();
 		ControladorCrucigrama controller = loader.getController();
@@ -28,11 +29,9 @@ public class ControladorVistaPrincipal {
 		Stage stage = new Stage();
 		stage.setScene(scene);
 		controller.init(stage, this);
+		controller.mostrarPistas(crucigrama.obtenerPistas());
 		stage.show();
 		this.stage.close();
-		Usuario nuevoUsuario = new Usuario(4, "Andre", 0);
-		//nuevoUsuario.obtenerUsuario(3);
-
 	}
 
 	public void setStage(Stage primaryStage) {

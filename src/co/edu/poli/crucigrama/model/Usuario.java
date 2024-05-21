@@ -25,9 +25,8 @@ public class Usuario {
 		this.puntaje = puntaje;
 	}
 
-	public ArrayList<String> obtenerUsuario(int id) {
+	public ArrayList<String> obtenerUsuarios(int id) {
 		usuarios = bd.leerDatosBD("usuario");
-		System.out.println(usuarios);
 		return usuarios;
 	}
 

@@ -1,9 +1,9 @@
 package co.edu.poli.crucigrama.model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 import com.mysql.jdbc.Statement;
-
 import co.edu.poli.crucigrama.conexionBD.CRUD;
 import co.edu.poli.crucigrama.conexionBD.Conexion;
 import java.sql.Connection;
@@ -24,14 +24,25 @@ public class Crucigrama {
 		super();
 	}
 
-	public void obtenerPalabras() {
+	public String obtenerPalabras() {
+		String palabrasBD = "";
 		palabras = bd.leerDatosBD("palabra");
-		System.out.println(palabras);
+		for (int i = 0; i < pistas.size(); i++) {
+			palabrasBD += pistas.get(i).toString() + "\n";
+		}
+		return palabrasBD;
 	}
 
-	public void obtenerPistas() {
+	public String obtenerPistas() {
+		String pistasBD = "";
 		pistas = bd.leerDatosBD("pistas");
-		System.out.println(pistas);
+		for (int i = 0; i < pistas.size(); i++) {
+			pistasBD += (i+1) + ". " + pistas.get(i).toString() + "\n";
+			if (i == 3) {
+				pistasBD += "\n\n\n";
+			}
+		}
+		return pistasBD;
 	}
 
 	public String validarPalabras(ArrayList<String> listaFront, ArrayList<String> listaBaseDatos) {
@@ -40,7 +51,8 @@ public class Crucigrama {
 		for (int i = 0; i < listaFront.size(); i++) {
 			palabra = listaFront.get(i);
 			if (palabra == null | palabra.isEmpty() | !palabra.matches("[a-zA-Z]+")) {
-				mensaje += "No se pueden ingresar espacios en blanco, carácteres especiales ni números. ID: " + (i + 1) + "\n\n";
+				mensaje += "No se pueden ingresar espacios en blanco, carácteres especiales ni números. ID: " + (i + 1)
+						+ "\n\n";
 			} else if (palabra.equalsIgnoreCase(listaBaseDatos.get(i))) {
 				mensaje += "La palabra ingresada para el ID: " + (i + 1) + " ¡Es Correcta!\n\n";
 				sumarPuntaje();

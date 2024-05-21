@@ -10,10 +10,6 @@ public class Pista {
 		this.idPista = idPista;
 		DescripcionPista = descripcionPista;
 	}
-
-	public void imprimirPista(int idPista, String descripcion) {
-		
-	}
 	
 	public int getIdPista() {
 		return idPista;

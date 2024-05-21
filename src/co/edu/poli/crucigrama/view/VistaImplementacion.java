@@ -2,7 +2,6 @@ package co.edu.poli.crucigrama.view;
 
 import java.io.IOException;
 import java.util.Scanner;
-
 import co.edu.poli.crucigrama.controller.ControladorVistaPrincipal;
 import co.edu.poli.crucigrama.model.Crucigrama;
 import co.edu.poli.crucigrama.model.Usuario;

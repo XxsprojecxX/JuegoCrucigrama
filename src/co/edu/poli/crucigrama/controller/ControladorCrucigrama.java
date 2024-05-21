@@ -1,6 +1,7 @@
 package co.edu.poli.crucigrama.controller;
 
 import javafx.event.Event;
+import javafx.scene.control.Button;
 import java.io.IOException;
 import java.util.ArrayList;
 import co.edu.poli.crucigrama.conexionBD.CRUD;
@@ -157,28 +158,7 @@ public class ControladorCrucigrama {
 	private TextField cruz_switch_BUCLE;
 
 	@FXML
-	private Text pista_1;
-
-	@FXML
-	private Text pista_2;
-
-	@FXML
-	private Text pista_4;
-
-	@FXML
-	private Text pista_7;
-
-	@FXML
-	private Text pista_8;
-
-	@FXML
-	private Text písta_3;
-
-	@FXML
-	private Text písta_5;
-
-	@FXML
-	private Text písta_6;
+	private Text pistas;
 
 	@FXML
 	private TextField switch_1;
@@ -194,6 +174,19 @@ public class ControladorCrucigrama {
 
 	@FXML
 	private TextField switch_5;
+
+	@FXML
+	private Button Instrucciones;
+	
+	@FXML
+    void BotonInstrucciones(ActionEvent event) throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Instrucciones.fxml"));
+		Parent root = loader.load();
+		Scene scene = new Scene(root);
+		Stage stage = new Stage();
+		stage.setScene(scene);
+		stage.show();
+    }
 
 	@FXML
 	public void ValidarCrucigrama(ActionEvent event) throws IOException {
@@ -213,6 +206,10 @@ public class ControladorCrucigrama {
 		if (cruz_algoritmo_PG.getText().length() <= 1) {
 			event.consume();
 		}
+	}
+	
+	public void mostrarPistas(String pistasBD) {
+		pistas.setText(pistasBD);
 	}
 
 	public ArrayList<String> obtenerListaPalabrasFront() {

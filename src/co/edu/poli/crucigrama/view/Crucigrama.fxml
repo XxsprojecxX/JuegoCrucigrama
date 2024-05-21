@@ -17,7 +17,7 @@
                   <Font size="37.0" />
                </font>
             </Text>
-            <Circle fill="#ff1fac" layoutX="742.0" layoutY="38.0" radius="19.0" stroke="#b92626" strokeType="INSIDE" />
+            <Circle fill="#ff2197" layoutX="742.0" layoutY="33.0" radius="19.0" stroke="#b92626" strokeType="INSIDE" />
             <Text fill="WHITE" layoutX="730.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
             <Button fx:id="Instrucciones" layoutX="463.0" layoutY="25.0" mnemonicParsing="false" onAction="#BotonInstrucciones" style="-fx-background-color: white;" text="Instrucciones" />
          </children>
@@ -26,22 +26,15 @@
    <left>
       <AnchorPane prefHeight="524.0" prefWidth="292.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" layoutX="40.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horizontales">
+            <Text fill="WHITE" layoutX="40.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horizontales:">
                <font>
                   <Font size="21.0" />
                </font></Text>
-            <Text fill="WHITE" layoutX="40.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verticales" wrappingWidth="98.955078125">
+            <Text fill="WHITE" layoutX="40.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verticales:" wrappingWidth="98.955078125">
                <font>
                   <Font size="21.0" />
                </font></Text>
-            <Text fx:id="pista_1" fill="WHITE" layoutX="26.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Conjunto de pasos para ejecutar una tarea" />
-            <Text fx:id="pista_2" fill="WHITE" layoutX="27.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Almacena información en filas y columnas" />
-            <Text fx:id="písta_3" fill="WHITE" layoutX="26.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Se usa para la web" />
-            <Text fx:id="pista_4" fill="WHITE" layoutX="26.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. estructura que evalua mas de un caso" />
-            <Text fx:id="písta_5" fill="WHITE" layoutX="29.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.escribir codigo" />
-            <Text fx:id="písta_6" fill="WHITE" layoutX="29.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. falla en el codigo" />
-            <Text fx:id="pista_7" fill="WHITE" layoutX="29.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. solo tiene dos valores" />
-            <Text fx:id="pista_8" fill="WHITE" layoutX="29.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. se repite hasta que algo sea cierto" />
+            <Text fx:id="pistas" fill="WHITE" layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pistas" textAlignment="JUSTIFY" wrappingWidth="263.0531005859375" />
          </children>
       </AnchorPane>
    </left>
