@@ -10,7 +10,7 @@ public class Crucigrama {
     private ArrayList<String> palabras = new ArrayList<String>();
     private ArrayList<String> pistas = new ArrayList<String>();
     private CRUD bd = new CRUD();
-    private Usuario usuario = new Usuario(1, "Andress", 0);
+    private Usuario usuario = new Usuario(0, "", 0);
 
     /**
      * Constructor por defecto de la clase Crucigrama.
