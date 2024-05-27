@@ -92,8 +92,10 @@ public class Crucigrama {
 		System.out.println(usuario.getPuntaje());
 	}
 
-	// Getters y setters
-
+	/**
+	 * Getters y setters
+	 */ 
+	
 	public ArrayList<String> getPalabras() {
 		return palabras;
 	}
