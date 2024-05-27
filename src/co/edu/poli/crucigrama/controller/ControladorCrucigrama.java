@@ -93,6 +93,9 @@ public class ControladorCrucigrama {
 	private TextField PG_3;
 
 	@FXML
+	private TextField PG_4;
+
+	@FXML
 	private TextField PG_5;
 
 	@FXML
@@ -100,9 +103,6 @@ public class ControladorCrucigrama {
 
 	@FXML
 	private TextField PG_7;
-
-	@FXML
-	private TextField PG_8;
 
 	@FXML
 	private TextField cruz_algoritmo_PG;
@@ -217,7 +217,7 @@ public class ControladorCrucigrama {
 	private void checkInput(KeyEvent event) {
 
 		TextField[] campos = { BD_10, BD_2, BD_3, BD_5, BD_6, BD_7, BD_8, BD_9, BUCLE_1, BUCLE_2, BUCLE_4, BUG_1, BUG_2,
-				HTML_1, HTML_2, HTML_3, PG_1, PG_2, PG_3, PG_5, PG_6, PG_7, PG_8, cruz_algoritmo_PG, algoritmo_2,
+				HTML_1, HTML_2, HTML_3, PG_1, PG_2, PG_3, PG_4, PG_5, PG_6, PG_7, cruz_algoritmo_PG, algoritmo_2,
 				algoritmo_3, algoritmo_4, algoritmo_5, algoritmo_7, algoritmo_8, algotirmo_6, boolean_1, boolean_2,
 				boolean_4, boolean_5, boolean_6, cruz_BD_BUCLE, cruz_BD_BUG, cruz_PG_BD, cruz_algoritmo_boolean,
 				cruz_boolean_HTML, cruz_switch_BUCLE, switch_1, switch_2, switch_3, switch_4, switch_5 };
@@ -256,8 +256,8 @@ public class ControladorCrucigrama {
 		swtch = switch_1.getText() + switch_2.getText() + switch_3.getText() + switch_4.getText()
 				+ cruz_switch_BUCLE.getText() + switch_5.getText();
 
-		programar = PG_1.getText() + PG_2.getText() + PG_3.getText() + cruz_PG_BD.getText() + PG_5.getText()
-				+ cruz_algoritmo_PG.getText() + PG_6.getText() + PG_7.getText() + PG_8.getText();
+		programar = PG_1.getText() + PG_2.getText() + PG_3.getText() + PG_4.getText() + PG_5.getText()
+				+ cruz_PG_BD.getText() + PG_6.getText() + cruz_algoritmo_PG.getText() + PG_7.getText();
 
 		bug = cruz_BD_BUG.getText() + BUG_1.getText() + BUG_2.getText();
 

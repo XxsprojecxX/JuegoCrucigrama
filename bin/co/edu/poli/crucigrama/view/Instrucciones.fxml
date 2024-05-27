@@ -30,19 +30,19 @@
                <font>
                   <Font size="13.0" />
                </font></Text>
-            <Text layoutX="64.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. No se pueden ingresar carácteres especiales, támpoco números (solo letras). " textAlignment="JUSTIFY">
+            <Text layoutX="64.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. No se pueden ingresar en los campos del crucigrama carácteres especiales, espacios, ni números (solo letras). " textAlignment="JUSTIFY" wrappingWidth="479.2879333496094">
                <font>
                   <Font size="13.0" />
                </font></Text>
-            <Text layoutX="65.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Solo se puede colocar una letra por casilla. ">
+            <Text layoutX="64.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Solo se puede colocar una letra por casilla. ">
                <font>
                   <Font size="13.0" />
                </font></Text>
-            <Text layoutX="63.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Una vez completado el crucigrama ó si quieres verificar una palabra, debes darle al botón &quot;Validar&quot;. Este generará un analísis de cúantas tuviste correctas e incorrectas." textAlignment="JUSTIFY" wrappingWidth="473.4037780761719">
+            <Text layoutX="63.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Si quieres verificar una palabra o una vez completado el crucigrama, debes darle al botón &quot;Validar&quot;. Este generará un analísis de cúantas palabras tuviste correctas e incorrectas." textAlignment="JUSTIFY" wrappingWidth="473.4037780761719">
                <font>
                   <Font size="13.0" />
                </font></Text>
-            <Text layoutX="63.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Cada palabra correcta equivale a 12.5pts, que se irán sumando hasta llegar a 100 puntos." textAlignment="JUSTIFY" wrappingWidth="458.923828125">
+            <Text layoutX="63.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Cada palabra correcta equivale a 12.5pts, que se irán sumando hasta llegar a 100 puntos." textAlignment="JUSTIFY" wrappingWidth="458.923828125">
                <font>
                   <Font size="13.0" />
                </font></Text>
