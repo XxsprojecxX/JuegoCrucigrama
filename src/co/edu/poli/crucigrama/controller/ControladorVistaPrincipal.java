@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 
 /**
@@ -48,6 +49,7 @@ public class ControladorVistaPrincipal {
 			Scene scene = new Scene(root);
 			Stage stage = new Stage();
 			stage.setScene(scene);
+			stage.getIcons().add(new Image("/co/edu/poli/crucigrama/view/icono.PNG"));
 
 			// Inicializar el controlador del crucigrama y mostrar la ventana
 			controller.init(stage, this);

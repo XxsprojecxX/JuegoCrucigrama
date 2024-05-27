@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -192,6 +193,7 @@ public class ControladorCrucigrama {
 		Scene scene = new Scene(root);
 		Stage stage = new Stage();
 		stage.setScene(scene);
+		stage.getIcons().add(new Image("/co/edu/poli/crucigrama/view/icono.PNG"));
 		stage.show();
 	}
 
@@ -204,6 +206,7 @@ public class ControladorCrucigrama {
 		Scene scene = new Scene(root);
 		Stage stage = new Stage();
 		stage.setScene(scene);
+		stage.getIcons().add(new Image("/co/edu/poli/crucigrama/view/icono.PNG"));
 		controladorResultado
 				.init(crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra")));
 		stage.show();

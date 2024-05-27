@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 
 /**
  * Clase que implementa la vista principal del crucigrama.
@@ -27,6 +28,7 @@ public class VistaImplementacion extends Application {
             Scene scene = new Scene(root);
             primaryStage.setTitle("CRUCIGRAMA");
             primaryStage.setScene(scene);
+            primaryStage.getIcons().add(new Image("/co/edu/poli/crucigrama/view/icono.PNG"));
             ControladorVistaPrincipal controladorVistaPrincipal = loader.getController();
             controladorVistaPrincipal.setStage(primaryStage);
             primaryStage.show();
