@@ -73,8 +73,14 @@ public class Crucigrama {
 				mensaje += "¡La palabra ingresada para el ID: " + (i + 1) + " es Incorrecta\n\n";
 			}
 		}
-		mensaje += "\nSu Score es: " + usuario.getPuntaje() + "\n";
-		usuario.setPuntaje(0);
+		if (usuario.getPuntaje() == 100) {
+			mensaje += "\n¡¡¡FELICITACIONES!!! ¡Has completado el todo crucigrama correctamente! \nSu Score es: "
+					+ usuario.getPuntaje() + "\n";
+			usuario.setPuntaje(0);
+		} else {
+			mensaje += "\nSu Score es: " + usuario.getPuntaje() + "\n";
+			usuario.setPuntaje(0);
+		}
 		return mensaje;
 	}
 
@@ -94,8 +100,8 @@ public class Crucigrama {
 
 	/**
 	 * Getters y setters
-	 */ 
-	
+	 */
+
 	public ArrayList<String> getPalabras() {
 		return palabras;
 	}
