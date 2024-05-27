@@ -15,7 +15,7 @@
          <children>
             <Text fill="WHITE" layoutX="209.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
                <font>
-                  <Font size="45.0" />
+                  <Font name="System Bold" size="45.0" />
                </font>
             </Text>
             <ImageView fitHeight="87.0" fitWidth="93.0" layoutX="36.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
@@ -35,8 +35,11 @@
       <AnchorPane prefHeight="365.0" prefWidth="700.0" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="txtUsuario" layoutX="276.0" layoutY="106.0" promptText="Usuario" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button layoutX="299.0" layoutY="148.0" mnemonicParsing="false" onAction="#ShowCrucigrama" prefHeight="49.0" prefWidth="90.0" style="-fx-background-color: #0598ff;" text="Jugar" />
-            <Text fill="#0598ff" layoutX="257.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa Tu Usuario" wrappingWidth="224.13671875">
+            <Button layoutX="301.0" layoutY="150.0" mnemonicParsing="false" onAction="#ShowCrucigrama" prefHeight="49.0" prefWidth="90.0" style="-fx-background-color: #0598ff;" text="Jugar" textAlignment="CENTER" textFill="#f4f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Text fill="#0598ff" layoutX="257.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa Tu Usuario:" wrappingWidth="224.13671875">
                <font>
                   <Font size="21.0" />
                </font>

@@ -44,7 +44,7 @@ public class Crucigrama {
 		for (int i = 0; i < pistas.size(); i++) {
 			pistasBD += (i + 1) + ". " + pistas.get(i).toString() + "\n";
 			if (i == 3) {
-				pistasBD += "\n\n\n";
+				pistasBD += "\n\n";
 			}
 		}
 		return pistasBD;

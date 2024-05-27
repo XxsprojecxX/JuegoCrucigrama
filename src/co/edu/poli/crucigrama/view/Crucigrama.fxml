@@ -8,38 +8,44 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.crucigrama.controller.ControladorCrucigrama">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.crucigrama.controller.ControladorCrucigrama">
    <top>
-      <AnchorPane prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="91.0" prefWidth="800.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" layoutX="70.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
+            <Text fill="WHITE" layoutX="42.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRUCIGRAMA">
                <font>
-                  <Font size="37.0" />
+                  <Font name="System Bold Italic" size="37.0" />
                </font>
             </Text>
             <Circle fill="#ff2197" layoutX="742.0" layoutY="33.0" radius="19.0" stroke="#b92626" strokeType="INSIDE" />
-            <Text fx:id="txt_usuario" fill="WHITE" layoutX="722.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
-            <Button fx:id="Instrucciones" layoutX="463.0" layoutY="25.0" mnemonicParsing="false" onAction="#BotonInstrucciones" style="-fx-background-color: white;" text="Instrucciones" />
+            <Text fx:id="txt_usuario" fill="WHITE" layoutX="722.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></Text>
+            <Button fx:id="Instrucciones" layoutX="463.0" layoutY="25.0" mnemonicParsing="false" onAction="#BotonInstrucciones" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: white;" text="Instrucciones" textFill="#005ae5">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="524.0" prefWidth="292.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" layoutX="40.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horizontales:">
+            <Text fill="WHITE" layoutX="14.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horizontales:">
                <font>
                   <Font size="21.0" />
                </font></Text>
-            <Text fill="WHITE" layoutX="40.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verticales:" wrappingWidth="98.955078125">
+            <Text fill="WHITE" layoutX="14.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verticales:" wrappingWidth="98.955078125">
                <font>
                   <Font size="21.0" />
                </font></Text>
-            <Text fx:id="pistas" fill="WHITE" layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pistas" textAlignment="JUSTIFY" wrappingWidth="263.0531005859375" />
+            <Text fx:id="pistas" fill="WHITE" layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pistas" textAlignment="JUSTIFY" wrappingWidth="263.0531005859375" />
          </children>
       </AnchorPane>
    </left>
    <center>
-      <AnchorPane prefHeight="510.0" prefWidth="567.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="419.0" prefWidth="507.0" BorderPane.alignment="CENTER">
          <children>
             <TextField fx:id="cruz_algoritmo_PG" layoutX="247.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="algoritmo_2" layoutX="272.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="23.0" style="-fx-border-color: #0598ff;" />
@@ -83,11 +89,14 @@
             <Text layoutX="256.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
             <Text layoutX="84.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
             <Text layoutX="354.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
-            <Text layoutX="157.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
+            <Text layoutX="157.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
             <Text layoutX="38.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
             <Text layoutX="59.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
             <Text layoutX="453.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
-            <Button layoutX="219.0" layoutY="314.0" mnemonicParsing="false" onAction="#ValidarCrucigrama" style="-fx-background-color: #0598ff;" text="Terminado" textFill="WHITE" />
+            <Button layoutX="195.0" layoutY="324.0" mnemonicParsing="false" onAction="#ValidarCrucigrama" prefHeight="22.0" prefWidth="104.0" style="-fx-background-color: #0598ff;" text="Validar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Button>
             <TextField fx:id="BUCLE_2" layoutX="148.0" layoutY="44.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="cruz_switch_BUCLE" layoutX="148.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
             <TextField fx:id="BUCLE_4" layoutX="148.0" layoutY="97.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
