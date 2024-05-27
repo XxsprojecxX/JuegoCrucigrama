@@ -1,6 +1,5 @@
 package co.edu.poli.crucigrama.controller;
 
-import javafx.event.Event;
 import javafx.scene.control.Button;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -181,12 +180,11 @@ public class ControladorCrucigrama {
 
 	@FXML
 	private Text txt_usuario;
-	
-	// Método para manejar el evento del botón de instrucciones
 
 	@FXML
 	private Button Instrucciones;
 
+	// Método para manejar el evento del botón de instrucciones
 	@FXML
 	void BotonInstrucciones(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Instrucciones.fxml"));
@@ -196,9 +194,8 @@ public class ControladorCrucigrama {
 		stage.setScene(scene);
 		stage.show();
 	}
-    // Método para validar el crucigrama y mostrar resultados
 
-
+	// Método para validar el crucigrama y mostrar resultados
 	@FXML
 	public void ValidarCrucigrama(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/poli/crucigrama/view/Resultados.fxml"));
@@ -211,18 +208,36 @@ public class ControladorCrucigrama {
 				.init(crucigrama.validarPalabras(obtenerListaPalabrasFront(), listaPalabrasbd.leerDatosBD("palabra")));
 		stage.show();
 	}
-	// Método para restringir la entrada de texto en un campo de texto
+
+	// Método para restringir la entrada de texto en los campos del crucigrama
 	@FXML
 	private void checkInput(KeyEvent event) {
-		if (cruz_algoritmo_PG.getText().length() <= 1) {
-			event.consume();
+
+		TextField[] campos = { BD_10, BD_2, BD_3, BD_5, BD_6, BD_7, BD_8, BD_9, BUCLE_1, BUCLE_2, BUCLE_4, BUG_1, BUG_2,
+				HTML_1, HTML_2, HTML_3, PG_1, PG_2, PG_3, PG_5, PG_6, PG_7, PG_8, cruz_algoritmo_PG, algoritmo_2,
+				algoritmo_3, algoritmo_4, algoritmo_5, algoritmo_7, algoritmo_8, algotirmo_6, boolean_1, boolean_2,
+				boolean_4, boolean_5, boolean_6, cruz_BD_BUCLE, cruz_BD_BUG, cruz_PG_BD, cruz_algoritmo_boolean,
+				cruz_boolean_HTML, cruz_switch_BUCLE, switch_1, switch_2, switch_3, switch_4, switch_5 };
+
+		for (int i = 0; i < campos.length; i++) {
+			if (campos[i].getText().length() >= 1) {
+				char texto = campos[i].getCharacters().charAt(0);
+				campos[i].setText(String.valueOf(texto));
+				if (!campos[i].getText().matches("[a-zA-Z]+")) {
+					campos[i].setStyle("-fx-border-color: red");
+				} else {
+					campos[i].setStyle("-fx-border-color: blue");
+				}
+			}
 		}
 	}
 
 	public void mostrarPistas(String pistasBD) {
 		pistas.setText(pistasBD);
 	}
-	// Método para obtener las palabras ingresadas por el usuario desde la interfaz de usuario
+
+	// Método para obtener las palabras ingresadas por el usuario desde la interfaz
+	// de usuario
 	public ArrayList<String> obtenerListaPalabrasFront() {
 		ArrayList<String> listaPalabrasFront = new ArrayList<String>();
 		algoritmo = cruz_algoritmo_PG.getText() + algoritmo_2.getText() + algoritmo_3.getText() + algoritmo_4.getText()
@@ -260,11 +275,15 @@ public class ControladorCrucigrama {
 
 		return listaPalabrasFront;
 	}
-	// Método para actualizar el texto del campo de usuario en la interfaz de usuario
+
+	// Método para actualizar el texto del campo de usuario en la interfaz de
+	// usuario
 	public void actualizarUsuario(String usuario) {
 		txt_usuario.setText(usuario);
 	}
-	// Método para inicializar el controlador con la instancia de la ventana principal y el controlador asociado
+
+	// Método para inicializar el controlador con la instancia de la ventana
+	// principal y el controlador asociado
 	public void init(Stage stage2, ControladorVistaPrincipal controladorVistaPrincipal) {
 		this.controladorVistaPrincipal = controladorVistaPrincipal;
 		this.stage = stage2;

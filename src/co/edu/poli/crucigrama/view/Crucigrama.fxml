@@ -41,62 +41,62 @@
    <center>
       <AnchorPane prefHeight="510.0" prefWidth="567.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="cruz_algoritmo_PG" layoutX="247.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" promptText="Text only" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algoritmo_2" layoutX="272.0" layoutY="176.0" prefHeight="27.0" prefWidth="23.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algoritmo_3" layoutX="294.0" layoutY="176.0" prefHeight="27.0" prefWidth="24.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algoritmo_4" layoutX="317.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algoritmo_5" layoutX="342.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algotirmo_6" layoutX="367.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algoritmo_7" layoutX="392.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="algoritmo_8" layoutX="418.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="cruz_algoritmo_boolean" layoutX="443.0" layoutY="176.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="boolean_1" layoutX="443.0" layoutY="149.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="boolean_2" layoutX="443.0" layoutY="203.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="cruz_boolean_HTML" layoutX="443.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="boolean_4" layoutX="443.0" layoutY="257.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="boolean_5" layoutX="443.0" layoutY="285.0" prefHeight="28.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="boolean_6" layoutX="443.0" layoutY="313.0" prefHeight="24.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="HTML_1" layoutX="367.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="HTML_2" layoutX="392.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="HTML_3" layoutX="418.0" layoutY="230.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_1" layoutX="247.0" layoutY="41.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_2" layoutX="247.0" layoutY="68.0" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_3" layoutX="247.0" layoutY="96.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="cruz_PG_BD" layoutX="247.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_5" layoutX="247.0" layoutY="149.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_6" layoutX="247.0" layoutY="203.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_7" layoutX="247.0" layoutY="229.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="PG_8" layoutX="247.0" layoutY="257.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="cruz_BD_BUG" layoutX="76.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_2" layoutX="101.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_3" layoutX="123.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="cruz_BD_BUCLE" layoutX="147.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_5" layoutX="172.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_6" layoutX="197.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_7" layoutX="222.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_8" layoutX="272.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_9" layoutX="297.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BD_10" layoutX="322.0" layoutY="124.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BUG_1" layoutX="76.0" layoutY="149.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BUG_2" layoutX="76.0" layoutY="175.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BUCLE_1" layoutX="148.0" layoutY="18.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <Text layoutX="256.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
-            <Text layoutX="85.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
-            <Text layoutX="351.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
+            <TextField fx:id="cruz_algoritmo_PG" layoutX="247.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_2" layoutX="272.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="23.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_3" layoutX="294.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="24.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_4" layoutX="317.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_5" layoutX="342.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algotirmo_6" layoutX="367.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_7" layoutX="392.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="algoritmo_8" layoutX="418.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_algoritmo_boolean" layoutX="443.0" layoutY="176.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_1" layoutX="443.0" layoutY="149.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_2" layoutX="443.0" layoutY="203.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_boolean_HTML" layoutX="443.0" layoutY="230.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_4" layoutX="443.0" layoutY="257.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_5" layoutX="443.0" layoutY="285.0" onKeyTyped="#checkInput" prefHeight="28.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="boolean_6" layoutX="443.0" layoutY="314.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="HTML_1" layoutX="367.0" layoutY="230.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="HTML_2" layoutX="392.0" layoutY="230.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="HTML_3" layoutX="418.0" layoutY="230.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_1" layoutX="247.0" layoutY="41.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_2" layoutX="247.0" layoutY="68.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_3" layoutX="247.0" layoutY="96.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_PG_BD" layoutX="247.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_5" layoutX="247.0" layoutY="149.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_6" layoutX="247.0" layoutY="203.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_7" layoutX="247.0" layoutY="229.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="PG_8" layoutX="247.0" layoutY="257.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_BD_BUG" layoutX="74.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_2" layoutX="100.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_3" layoutX="123.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_BD_BUCLE" layoutX="148.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_5" layoutX="172.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_6" layoutX="197.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_7" layoutX="222.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_8" layoutX="272.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_9" layoutX="297.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BD_10" layoutX="322.0" layoutY="124.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUG_1" layoutX="74.0" layoutY="151.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUG_2" layoutX="74.0" layoutY="178.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUCLE_1" layoutX="148.0" layoutY="17.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
+            <Text layoutX="256.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+            <Text layoutX="84.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
+            <Text layoutX="354.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
             <Text layoutX="157.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
             <Text layoutX="38.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
             <Text layoutX="59.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
             <Text layoutX="453.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
             <Button layoutX="219.0" layoutY="314.0" mnemonicParsing="false" onAction="#ValidarCrucigrama" style="-fx-background-color: #0598ff;" text="Terminado" textFill="WHITE" />
-            <TextField fx:id="BUCLE_2" layoutX="148.0" layoutY="44.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="cruz_switch_BUCLE" layoutX="148.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="BUCLE_4" layoutX="148.0" layoutY="97.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="switch_1" layoutX="50.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="switch_2" layoutX="76.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="switch_3" layoutX="101.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="switch_4" layoutX="123.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <TextField fx:id="switch_5" layoutX="172.0" layoutY="71.0" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
-            <Text layoutX="231.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+            <TextField fx:id="BUCLE_2" layoutX="148.0" layoutY="44.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="cruz_switch_BUCLE" layoutX="148.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="BUCLE_4" layoutX="148.0" layoutY="97.0" onKeyTyped="#checkInput" prefHeight="27.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_1" layoutX="50.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_2" layoutX="76.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_3" layoutX="101.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_4" layoutX="123.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <TextField fx:id="switch_5" layoutX="173.0" layoutY="71.0" onKeyTyped="#checkInput" prefHeight="0.0" prefWidth="25.0" style="-fx-border-color: #0598ff;" />
+            <Text layoutX="233.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
          </children>
       </AnchorPane>
    </center>
